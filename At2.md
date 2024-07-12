@@ -4,58 +4,43 @@
 
 #### **(a) Quais são os elementos essenciais de uma cifra simétrica?**
 
->
-> *** Algoritmo de criptografia: Define como a mensagem original é transformada em texto cifrado.
+>  Algoritmo de criptografia: Define como a mensagem original é transformada em texto cifrado.
 >
 > * Chave: Sequência de bits usada pelo algoritmo para criptografar e descriptografar.
 > * Texto claro: Mensagem original a ser criptografada.
 > * Texto cifrado: Mensagem resultante da criptografia do texto claro.
->
-> **
 
 #### **(b) Quais são as duas funções básicas usadas nos algoritmos de encriptação?**
 
+> Criptografia: Transformação do texto claro em texto cifrado.
 >
-> *** Criptografia: Transformação do texto claro em texto cifrado.
->
-> * Descriptografia: Transformação do texto cifrado em texto claro.
->
-> **
+> Descriptografia: Transformação do texto cifrado em texto claro.
 
 #### **(c) Qual é a diferença entre uma cifra de bloco e uma cifra de fluxo?**
 
+> Cifra de bloco: Opera em blocos fixos de texto claro, independentemente do conteúdo.
 >
-> *** Cifra de bloco: Opera em blocos fixos de texto claro, independentemente do conteúdo.
->
-> * Cifra de fluxo: Opera em um fluxo contínuo de bits, adaptando-se ao conteúdo.
->
-> **
+> Cifra de fluxo: Opera em um fluxo contínuo de bits, adaptando-se ao conteúdo.
 
 #### **(d) Quais são as duas técnicas gerais para atacar uma cifra?**
 
+> Análise criptoanalítica: Explorar vulnerabilidades matemáticas do algoritmo para obter a chave.
 >
-> *** Análise criptoanalítica: Explorar vulnerabilidades matemáticas do algoritmo para obter a chave.
->
-> * Ataque de força bruta: Tentar todas as chaves possíveis até encontrar a correta.
->
-> **
+> Ataque de força bruta: Tentar todas as chaves possíveis até encontrar a correta.
 
 #### **(e) Quais são os dois problemas com o one-time pad?**
 
+> Distribuição da chave: Dificuldade em distribuir chaves únicas e seguras para todos os participantes.
 >
-> *** Distribuição da chave: Dificuldade em distribuir chaves únicas e seguras para todos os participantes.
->
-> * Armazenamento da chave: Necessidade de armazenar cópias seguras da chave para futuros usos.
->
-> **
+> Armazenamento da chave: Necessidade de armazenar cópias seguras da chave para futuros usos.
 
 #### **(f) O que é uma cifra de transposição?**
 
-> **Técnica que reorganiza a ordem das letras em um texto, sem alterar os caracteres em si. Exemplo: "OLÁ MUNDO" se torna "OULM DANO".**
+> Técnica que reorganiza a ordem das letras em um texto, sem alterar os caracteres em si. Exemplo: "OLÁ MUNDO" se torna "OULM DANO".
 
 #### **(g) O que é esteganografia?**
 
-> **Arte de esconder mensagens secretas dentro de outras mídias, como imagens ou áudio, sem que a mensagem oculta seja perceptível.**
+> Arte de esconder mensagens secretas dentro de outras mídias, como imagens ou áudio, sem que a mensagem oculta seja perceptível.
 
 ### 2. Uma generalização da cifra de César, conhecida como cifra de César afim, tem a seguinte forma: a cada letra de texto claro p, substitua-a pela letra de texto cifrado C :
 
@@ -65,30 +50,21 @@
 
 #### **(a) Existem limitações sobre o valor de b? Explique por que sim ou por que não.**
 
->
-> **Não há limitações para o valor de 'b'. Pois, independentemente do valor de 'b', o resultado da soma ap + b será sempre mapeado para um valor dentro do alfabeto de 26 letras, garantindo que cada caractere de texto claro tenha um correspondente único de texto cifrado.
+> Não há limitações para o valor de 'b'. Pois, independentemente do valor de 'b', o resultado da soma ap + b será sempre mapeado para um valor dentro do alfabeto de 26 letras, garantindo que cada caractere de texto claro tenha um correspondente único de texto cifrado.
 >
 > Exemplo: Se 'b' for 100, 'ap + b' será sempre reduzido mod 26, o que garante que o resultado esteja entre 0 e 25.
->
-> **
 
 #### **(b) Determine quais valores de a não são permitidos.**
 
->
-> **Os valores não permitidos de 'a' são aqueles que resultam em um fator multiplicativo nulo na função de criptografia E([a, b], p) = (ap + b) mod 26.
+> Os valores não permitidos de 'a' são aqueles que resultam em um fator multiplicativo nulo na função de criptografia E([a, b], p) = (ap + b) mod 26.
 >
 > Um fator multiplicativo nulo significa que a é igual a 0. Se a for 0, a função de criptografia se torna E([0, b], p) = b + p mod 26. Nesta situação, a criptografia se resume à adição de 'b' a cada caractere de texto claro, o que não fornece nenhuma segurança real. Qualquer pessoa com acesso ao texto cifrado pode facilmente subtrair 'b' de cada caractere para recuperar o texto original.
->
-> **
 
 #### **(c) Ofereça uma afirmação geral sobre quais valores de a são e não são permitidos. Justifique-a.**
 
->
-> **a={R} - {0}
+> a={R} - {0}
 >
 > Como explicado anteriormente, o único valor de 'a' que causa problemas é 0, pois resulta em uma criptografia trivial e insegura. Para qualquer outro valor de 'a' (positivo ou negativo), a função de criptografia opera de forma correta, mapeando cada caractere de texto claro para um único caractere de texto cifrado, preservando a propriedade um-para-um necessária para a decriptação.
->
-> **
 
 ### 3.
 

@@ -1,6 +1,5 @@
 # 1ª Verificação de Aprendizagem (31/07/2024)
 
-
 ### 1 - Para cada um dos seguintes recursos, determine um nível de impacto baixo, moderado ou alto à perda de confidencialidade, disponibilidade e integridade, respectivamente. Justifique suas respostas.
 
 (a) uma organização gerenciando informações públicas em seu servidor web.
@@ -82,7 +81,6 @@
 > * **DES (Data Encryption Standard):** Utiliza a estrutura de Feistel com 16 rodadas de permutação e substituição.
 > * **Rijndael/AES (Advanced Encryption Standard):** Substitui DES, usa uma estrutura de substituição e permutação, e suporta chaves de 128, 192 e 256 bits.
 
-
 ### 3 - Quando o barco de patrulha norte-americano PT-109, sob o comando do tenente John f. Kennedy, foi afundado por um destróier japonês, uma mensagem foi recebida na estação sem fio australiana em código playfair:
 
 KXJEY UREBE ZWEHE WRYTU HEYFS
@@ -94,8 +92,7 @@ GDSON SXBOU YWRHE BAAHY USEDQ
 
 > Para decifrar a mensagem codificada em código Playfair usando a chave "ROYAL NEW ZEALAND NAVY", deve-se seguir os seguintes passos:
 >
->
->  **Construa uma Matriz Playfair** :
+> **Construa uma Matriz Playfair** :
 >
 > * Começa-se criando uma matriz 5x5 usando a chave  "ROYAL NEW ZEALAND NAVY"  removendo letras duplicadas e tratar "I" e "J" como a mesma letra:
 >   [R O Y A L]
@@ -219,10 +216,9 @@ GDSON SXBOU YWRHE BAAHY USEDQ
 > * Em Português:
 >   ESTE NOSSO BARCO FOI AFUNDADO POR SEUS AMIGOS E NÓS FOMOS PARA UM I ELE ESTÁ LOCALIZADO NO LOCAL DE O E ESTÃO FORA DE ALCANCE VOLTAR SEGURO PARA QUALQUER PROFUNDIDADE ABAIXO DA ÁGUA ENVIAR AJUDA PRECISA DE UM M AJUDA EM BREVE
 
-
 ### 4 - Crie uma aplicação que possa encriptar e decriptar usando uma cifra de Hill 2 × 2.
 
-```
+```python
 import numpy as np
 
 # Função para calcular a inversa modular de uma matriz
@@ -413,7 +409,7 @@ output:
 
 **Nota: você pode realizar todos os cálculos à mão ou escrever um programa que dê suporte a eles. Se escolher escrever um programa, ele deverá ser feito inteiramente por você; nesta tarefa, não use bibliotecas ou código fonte de domínio público (você pode se guiar pelos exemplos Sage disponibilizados).**
 
-```
+```python
 def mix_collumns(state):
     matrix_mixCollumns = Matrix([
         [0x02, 0x03, 0x01, 0x01],
@@ -429,7 +425,7 @@ def mix_collumns(state):
     return result.apply_map(lambda x: x % 0x100).list()
 ```
 
-```
+```python
 def invert(mixed_result):
     m_inv = Matrix([
         [0x0e, 0x0b, 0x0d, 0x09],
@@ -445,11 +441,11 @@ def invert(mixed_result):
     return result.apply_map(lambda x: x % 0x100).list()
 ```
 
-```
+```python
 input_a = [0x67, 0x89, 0xAB, 0xCD]
 ```
 
-```
+```python
 mixed_result = mix_collumns([input_a])
 ```
 

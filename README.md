@@ -20,4 +20,6 @@
 
 ### 4. Conceitos básicos de Teoria dos Números e Corpos Finitos - (18/07/2024);
 
-### 5. AES (08/08/2024).
+### 5. AES (08/08/2024);
+
+### 6. Operação de Cifra de Bloco (15/08/2024).

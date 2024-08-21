@@ -22,4 +22,8 @@
 
 ### 5. AES (08/08/2024);
 
-### 6. Operação de Cifra de Bloco (15/08/2024).
+### 6. Operação de Cifra de Bloco (15/08/2024);
+
+### 7. Capitulo 07 (22/08/2024);
+
+### 8. Capitulo 08 (22/08/2024).
